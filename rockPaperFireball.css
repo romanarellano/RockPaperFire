@@ -30,32 +30,6 @@
 
 }
 
-/*#rockImg{
-  position:relative;
-
-  padding:15px;
-  top:400px;
-  left:580px;
-}
-
-#paperImg{
-  position:relative;
-
-  padding:15px;
-  top:400px;
-  left:580px;
-
-}
-
-#fireImg{
-  position:relative;
-
-  padding:15px;
-  top:400px;
-  left:580px;
-  
-}
-*/
 
 #Scoreboard{
   position:relative;
@@ -81,5 +55,10 @@ img:active{
 
 border:yellow solid;
 
+}
+
+#butt{
+
+  display:none;
 }
 

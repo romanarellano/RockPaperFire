@@ -27,18 +27,18 @@ switch(You){
     if(Computer === 'rock'){
       Machine='Computer: '+ elements[0];
       result=('Tie Game');
-      
-      document.getElementById('tie').innerHTML= Ties++;
+      Ties=Ties+1;
+      document.getElementById('tie').innerHTML= Ties;
     }else if(Computer === 'paper'){
       Machine=('Computer: ' + elements[1] );
       result='You Lose';
-      
-      document.getElementById('loss').innerHTML= Losses++;
+      Losses=Losses+1;
+      document.getElementById('loss').innerHTML= Losses;
     }else {
       Machine=('Computer: ' + elements[2] );
       result='You Win';
-      
-     document.getElementById('won').innerHTML= Wins++;
+      Wins=Wins+1;
+     document.getElementById('won').innerHTML= Wins;
     }
       document.getElementById('yourPick').innerHTML=Yours;
       document.getElementById('computerPick').innerHTML=Machine;
@@ -50,18 +50,18 @@ switch(You){
    if(Computer === 'paper'){
       Machine='Computer: '+ elements[1];
       result='Tie Game';
-     
-      document.getElementById('tie').innerHTML=Ties++;
+      Ties=Ties+1;
+      document.getElementById('tie').innerHTML=Ties;
     }else if(Computer === 'fireball'){
       Machine=('Computer: ' + elements[2] );
       result = 'You Lose';
-     
-      document.getElementById('loss').innerHTML=Losses++;
+     Losses=Losses+1;
+      document.getElementById('loss').innerHTML=Losses;
     }else{
       Machine=('Computer: ' +elements[0]);
       result = 'You Win';
-     
-      document.getElementById('won').innerHTML=Wins++;
+     Wins=Wins+1;
+      document.getElementById('won').innerHTML=Wins;
 }
     document.getElementById('yourPick').innerHTML=Yours;
     document.getElementById('computerPick').innerHTML=Machine;
@@ -73,118 +73,49 @@ switch(You){
     if(Computer === 'fireball'){
       Machine= "Computer: "+ elements[2];
       result=('Tie Game');
-      
-      document.getElementById('tie').innerHTML=Ties++;
+      Ties=Ties+1;
+      document.getElementById('tie').innerHTML=Ties;
     }else if(Computer === 'rock'){
       Machine=("Computer: " + elements[0] );
       result='You Lose';
-     
-      document.getElementById('loss').innerHTML=Losses++;
+     Losses=Losses+1;
+      document.getElementById('loss').innerHTML=Losses;
     }else {
       Machine=("Computer: " +elements[1]);
       result="You Win";
-      
-      document.getElementById('win').innerHTML=Wins++;
+       Wins=Wins+1;
+      document.getElementById('win').innerHTML=Wins;
     }
 
       document.getElementById('yourPick').innerHTML=Yours;
       document.getElementById('computerPick').innerHTML=Machine;
       document.getElementById('winOrLose').innerHTML=result;
-      break;
+     
     }
+
+     if(Wins===5){
+
+      
+       $('#background').empty(); 
+       $('#background').css('background-color','red');
+       $('h1').css('left','200px');
+       $('#background').append('<h1>You Win</h1>');
+      // $('#butt').show();
+     
+
+           }
+     else if(Losses===5){
+       
+        $('#background').empty(); 
+        $('#background').css('background-color','blue');
+        $('h1').css('left','200px');
+        $('#background').append('<h1>You Lose</h1>');
+       // $('#butt').show();
+
+     }
 
  }    
 
 
   
-
-function paperFunction(You){
-
-
-var Yours=('You: ' + You);
-var elements = ['rock','paper','fireball'];
-var Computer = elements[Math.floor(Math.random()*3)];
-
-switch(You){
-
-
-    case "paper": 
-
-   if(Computer === 'paper'){
-      Machine='Computer: '+ elements[1];
-      result='Tie Game';
-     
-      document.getElementById('tie').innerHTML=Ties++;
-    }else if(Computer === 'fireball'){
-      Machine=('Computer: ' + elements[2] );
-      result = 'You Lose';
-     
-      document.getElementById('loss').innerHTML=Losses++;
-    }else{
-      Machine=('Computer: ' +elements[0]);
-      result = 'You Win';
-     
-      document.getElementById('won').innerHTML=Wins++;
-}
-    document.getElementById('yourPick').innerHTML=Yours;
-    document.getElementById('computerPick').innerHTML=Machine;
-    document.getElementById('winOrLose').innerHTML=result;
-   // break;
-}
-    
-}
-
-function fireballFunction(You){
-
-
-
-var Yours=('You: ' + You);
-var elements = ['rock','paper','fireball'];
-var Computer = elements[Math.floor(Math.random()*3)];
-
-switch(You){
-case "fireball": 
-
-    if(Computer === 'fireball'){
-      Machine= "Computer: "+ elements[2];
-      result=('Tie Game');
-      
-      document.getElementById('tie').innerHTML=Ties++;
-    }else if(Computer === 'rock'){
-      Machine=("Computer: " + elements[0] );
-      result='You Lose';
-     
-      document.getElementById('loss').innerHTML=Losses++;
-    }else {
-      Machine=("Computer: " +elements[1]);
-      result="You Win";
-      
-      document.getElementById('win').innerHTML=Wins++;
-    }
-
-      document.getElementById('yourPick').innerHTML=Yours;
-      document.getElementById('computerPick').innerHTML=Machine;
-      document.getElementById('winOrLose').innerHTML=result;
-    // break;
-    }
-
-     
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

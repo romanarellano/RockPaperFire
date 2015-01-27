@@ -13,57 +13,20 @@
         
            randFunction('rock');
 
-           if(Wins===5){
-
-             $('#background').empty(); 
-             $('#background').css('background-color','red');
-             $('#background').append('<h1>You Win</h1>');
-
-           }
-           else if(Losses===5){
-              $('#background').empty(); 
-              $('#background').css('background-color','blue');
-              $('#background').append('<h1>You Lose</h1>');
-
-           }
+          
 
       });
 
        $('#paperImg').on('click',function(){
           randFunction('paper');
 
-           if(Wins===5){
-
-             $('#background').empty(); 
-             $('#background').css('background-color','red');
-            $('#background').append('<h1>You Win</h1>');
-
-           }
-           else if(Losses===5){
-              $('#background').empty(); 
-              $('#background').css('background-color','blue');
-              $('#background').append('<h1>You Lose</h1>');
-
-           }
 
        });
 
         $('#fireImg').on('click',function(){
             randFunction('fireball');
 
-             if(Wins===5){
-
-             $('#background').empty(); 
-             $('#background').css('background-color','red');
-             $('#background').append('<h1>You Win</h1>');
-
-           }
-           else if(Losses===5){
-              $('#background').empty(); 
-              $('#background').css('background-color','blue');
-              $('#background').append('<h1>You Lose</h1>');
-
-           }
+         
 
         });
 
@@ -95,6 +58,7 @@
 
 </table>
 
+<button id='butt'></button>
 <!--<button type='button' onClick=rockpaper()>play Again</button>-->
 
 <a>
