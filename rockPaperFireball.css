@@ -2,6 +2,7 @@
 
 #yourPick{
   position:relative;
+  border:solid 2px;
 font-size:70px;
 color:blue;
 /*right:150px;*/
@@ -9,7 +10,7 @@ margin-top:10px;
 text-align:center;
 
 }
-#runGame{
+#computerPick{
 
 position:relative;
 font-size:70px;
@@ -19,9 +20,19 @@ border:solid 2px;
 text-align:center;
 
 }
+#winOrLose{
+position:relative;
+font-size:70px;
+color:yellow;
+/*margin-top:50px;*/
+border:solid 2px;
+text-align:center;
+
+}
 
 .images{
 position:relative;
+
 padding:15px;
 top:140px;
 left:470px;
