@@ -3,6 +3,33 @@
 
   <script type='text/javascript' src='Rock_game.js'></script>
    <link type="text/css" rel="stylesheet" href="rockPaperFireball.css">
+
+   <script type='text/javascript'>
+    
+  
+     var table= document.createElement("table");
+     var row =table.insertRow(0);
+     var wins = row.insertCell(0);
+     var lose = row.insertCell(1);
+     var tie = row.insertCell(2);
+
+     var row1 = table.insertRow(1);
+     var win = row1.insertCell(0);
+     var los = row1.insertCell(1);
+     var ti = row1.insertCell(2);
+
+
+wins.innerHTML = 'WINS';
+lose.innerHTML = 'LOSSES';
+tie.innerHTML = 'TIES';
+
+wins.innerHTML = 0;
+lose.innerHTML = 0;
+tie.innerHTML = 0;
+
+   </script>
+
+
 </head>
 <body bgcolor='black'>
   <p id='yourPick'></p>
@@ -11,7 +38,7 @@
 
    <p id='winOrLose'></p>
 
-  <p id='Score'></p>
+  <p id='Score'>0</p>
 
 <!--<button type='button' onClick=rockpaper()>play Again</button>-->
 
@@ -27,6 +54,21 @@
 <a>
 <img class='images' onclick=fireballFunction(); src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUa-icpG3O6jyfcKbkg3lPTYpgQIkMdD0U1B3hsEDpgK8TIY5IHg' >
 </a>
+
+
+<table id="Scoreboard">
+<row>
+<td >Wins</td>
+<td >Losses</td>
+<td >Ties</td>
+</row>
+<row>
+<td id='won'>0</td>
+<td id='loss' >0</td>
+<td id= 'tie'>0</td>
+</row>
+
+</table>
 
 </body>
 
