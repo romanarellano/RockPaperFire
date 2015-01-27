@@ -6,9 +6,12 @@ window.onload = function() {
 
 
 };
-var Wins=0;
-var Ties=0;
-var Losses=0;
+ Wins=0;
+ Ties=0;
+ Losses=0;
+
+
+
 function rockFunction(){
 
 You='rock';
@@ -23,25 +26,25 @@ switch(You){
     case "rock": 
 
     if(Computer === 'rock'){
-      Machine='Computer: '+ Computer;
+      Machine='Computer: '+ elements[0];
       result=('Tie Game');
       
-      document.getElementById('tie').innerHTML=Ties++;
+      document.getElementById('tie').innerHTML= Ties++;
     }else if(Computer === 'paper'){
-      Machine=('Computer: ' + Computer );
+      Machine=('Computer: ' + elements[1] );
       result='You Lose';
       
-      document.getElementById('loss').innerHTML=Losses++;
+      document.getElementById('loss').innerHTML= Losses++;
     }else {
       Machine=('Computer: ' + elements[2] );
       result='You Win';
       
-     document.getElementById('won').innerHTML=Wins++;
+     document.getElementById('won').innerHTML= Wins++;
     }
-    document.getElementById('yourPick').innerHTML=Yours;
-    document.getElementById('computerPick').innerHTML=Machine;
-    document.getElementById('winOrLose').innerHTML=result;
-    break;
+      document.getElementById('yourPick').innerHTML=Yours;
+      document.getElementById('computerPick').innerHTML=Machine;
+      document.getElementById('winOrLose').innerHTML=result;
+   // break;
     }
 }
 
@@ -63,7 +66,7 @@ switch(You){
      
       document.getElementById('tie').innerHTML=Ties++;
     }else if(Computer === 'fireball'){
-      Machine=('Computer: ' + Computer );
+      Machine=('Computer: ' + elements[2] );
       result = 'You Lose';
      
       document.getElementById('loss').innerHTML=Losses++;
@@ -76,7 +79,7 @@ switch(You){
     document.getElementById('yourPick').innerHTML=Yours;
     document.getElementById('computerPick').innerHTML=Machine;
     document.getElementById('winOrLose').innerHTML=result;
-    break;
+   // break;
 }
     
 }
@@ -93,7 +96,7 @@ switch(You){
 case "fireball": 
 
     if(Computer === 'fireball'){
-      Machine= "Computer: "+ Computer;
+      Machine= "Computer: "+ elements[2];
       result=('Tie Game');
       
       document.getElementById('tie').innerHTML=Ties++;
@@ -112,7 +115,7 @@ case "fireball":
       document.getElementById('yourPick').innerHTML=Yours;
       document.getElementById('computerPick').innerHTML=Machine;
       document.getElementById('winOrLose').innerHTML=result;
-     break;
+    // break;
     }
 
      
