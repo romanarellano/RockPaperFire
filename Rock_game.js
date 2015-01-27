@@ -41,7 +41,7 @@ switch(You){
     document.getElementById('yourPick').innerHTML=Yours;
     document.getElementById('computerPick').innerHTML=Machine;
     document.getElementById('winOrLose').innerHTML=result;
-   // document.getElementById('Score').innerHTML=result;
+    break;
     }
 }
 
@@ -58,16 +58,16 @@ switch(You){
     case "paper": 
 
    if(Computer === 'paper'){
-      Machine='Computer: '+ Computer;
-      result=('Tie game');
+      Machine='Computer: '+ elements[1];
+      result='Tie game';
      
       document.getElementById('tie').innerHTML=Ties++;
     }else if(Computer === 'fireball'){
       Machine=('Computer: ' + Computer );
-      result = 'You lose';
+      result = 'You Lose';
      
       document.getElementById('loss').innerHTML=Losses++;
-    }else 
+    }else{
       Machine=('Computer: ' +elements[0]);
       result = 'You Win';
      
@@ -76,8 +76,8 @@ switch(You){
     document.getElementById('yourPick').innerHTML=Yours;
     document.getElementById('computerPick').innerHTML=Machine;
     document.getElementById('winOrLose').innerHTML=result;
-  //  document.getElementById('Score').innerHTML=result;
-
+    break;
+}
     
 }
 
@@ -99,21 +99,23 @@ case "fireball":
       document.getElementById('tie').innerHTML=Ties++;
     }else if(Computer === 'rock'){
       Machine=("Computer: " + elements[0] );
-      result='You win';
+      result='You lose';
      
       document.getElementById('won').innerHTML=Wins++;
     }else {
       Machine=("Computer: " +elements[1]);
-      result="You lose";
+      result="You win";
       
       document.getElementById('loss').innerHTML=Losses++;
     }
+
+      document.getElementById('yourPick').innerHTML=Yours;
+      document.getElementById('computerPick').innerHTML=Machine;
+      document.getElementById('winOrLose').innerHTML=result;
+     break;
     }
 
-     document.getElementById('yourPick').innerHTML=Yours;
-     document.getElementById('computerPick').innerHTML=Machine;
-     document.getElementById('winOrLose').innerHTML=result;
-   //  document.getElementById('Score').innerHTML=result;
+     
 }
 
 
