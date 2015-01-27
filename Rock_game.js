@@ -2,19 +2,18 @@ window.onload = function() {
   
 
 
-  //rockpaper();
 
 
 };
+
+
  Wins=0;
  Ties=0;
  Losses=0;
 
+ function rockFunction(You){
 
 
-function rockFunction(){
-
-You='rock';
 var Yours=('You: ' + You);
 var elements = ['rock','paper','fireball'];
 var Computer = elements[Math.floor(Math.random()*3)];
@@ -48,9 +47,9 @@ switch(You){
     }
 }
 
-function paperFunction(){
+function paperFunction(You){
 
-You='paper';
+
 var Yours=('You: ' + You);
 var elements = ['rock','paper','fireball'];
 var Computer = elements[Math.floor(Math.random()*3)];
@@ -84,10 +83,10 @@ switch(You){
     
 }
 
-function fireballFunction(){
+function fireballFunction(You){
 
 
-You='fireball';
+
 var Yours=('You: ' + You);
 var elements = ['rock','paper','fireball'];
 var Computer = elements[Math.floor(Math.random()*3)];
@@ -120,6 +119,13 @@ case "fireball":
 
      
 }
+
+
+
+
+
+
+
 
 
 
