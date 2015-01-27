@@ -3,66 +3,83 @@
 #yourPick{
   position:relative;
   border:solid 2px;
-font-size:70px;
-color:blue;
-/*right:150px;*/
-margin-top:10px;
-text-align:center;
+  font-size:70px;
+  color:blue;
+  /*right:150px;*/
+  margin-top:10px;
+  text-align:center;
 
 }
 #computerPick{
 
-position:relative;
-font-size:70px;
-color:green;
-/*margin-top:50px;*/
-border:solid 2px;
-text-align:center;
+  position:relative;
+  font-size:70px;
+  color:green;
+  /*margin-top:50px;*/
+  border:solid 2px;
+  text-align:center;
 
 }
 #winOrLose{
-position:relative;
-font-size:70px;
-color:yellow;
-/*margin-top:50px;*/
-border:solid 2px;
-text-align:center;
+  position:relative;
+  font-size:70px;
+  color:yellow;
+  /*margin-top:50px;*/
+  border:solid 2px;
+  text-align:center;
 
 }
 
-#rockImg{
-position:relative;
+/*#rockImg{
+  position:relative;
 
-padding:15px;
-top:140px;
-left:580px;
+  padding:15px;
+  top:400px;
+  left:580px;
 }
 
 #paperImg{
-position:relative;
+  position:relative;
 
-padding:15px;
-top:140px;
-left:580px;
+  padding:15px;
+  top:400px;
+  left:580px;
 
 }
 
 #fireImg{
-position:relative;
+  position:relative;
 
-padding:15px;
-top:140px;
-left:580px;
+  padding:15px;
+  top:400px;
+  left:580px;
   
 }
-
-
+*/
 
 #Scoreboard{
-position:relative;
-left:550px;
+  position:relative;
+  left:550px;
   color:white;
   width:40%;
   font-size:50px;
   text-align:center;
 }
+
+
+img{
+
+position:relative;
+
+  padding:15px;
+  top:100px;
+  left:580px;
+
+}
+
+img:active{
+
+border:yellow solid;
+
+}
+
