@@ -2,30 +2,30 @@
 <head>
 
   <script type='text/javascript' src='Rock_game.js'></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
    <link type="text/css" rel="stylesheet" href="rockPaperFireball.css">
 
    <script type='text/javascript'>
     
-  
-//      var table= document.createElement("table");
-//      var row =table.insertRow(0);
-//      var wins = row.insertCell(0);
-//      var lose = row.insertCell(1);
-//      var tie = row.insertCell(2);
+  $(document).ready(function(){
 
-//      var row1 = table.insertRow(1);
-//      var win = row1.insertCell(0);
-//      var los = row1.insertCell(1);
-//      var ti = row1.insertCell(2);
+      $('#rockImg').click(function(){
+           rockFunction();
 
+      });
 
-// wins.innerHTML = 'WINS';
-// lose.innerHTML = 'LOSSES';
-// tie.innerHTML = 'TIES';
+       $('#paperImg').click(function(){
+          paperFunction();
 
-// wins.innerHTML = 0;
-// lose.innerHTML = 0;
-// tie.innerHTML = 0;
+       });
+
+        $('#fireImg').click(function(){
+            fireballFunction();
+
+        });
+
+  });
+
 
    </script>
 
@@ -55,16 +55,16 @@
 <!--<button type='button' onClick=rockpaper()>play Again</button>-->
 
 <a>
-<img class='images' onclick=rockFunction(); src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZvYjODStkRtY8sXlXJpoQBE4AUOFwtMwz-7sKoRPZ6x1YX6wj' >
+<img id='rockImg'  src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZvYjODStkRtY8sXlXJpoQBE4AUOFwtMwz-7sKoRPZ6x1YX6wj' >
 </a>
 
 <a>
-<img class='images' onclick=paperFunction(); src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRM1Yiph9ZRVIIErdIKmdbdSPBD91fbMn19PphsvgmybJ6apIYt' >
+<img id='paperImg'  src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRM1Yiph9ZRVIIErdIKmdbdSPBD91fbMn19PphsvgmybJ6apIYt' >
 </a>
 
 
 <a>
-<img class='images' onclick=fireballFunction(); src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUa-icpG3O6jyfcKbkg3lPTYpgQIkMdD0U1B3hsEDpgK8TIY5IHg' >
+<img id='fireImg' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUa-icpG3O6jyfcKbkg3lPTYpgQIkMdD0U1B3hsEDpgK8TIY5IHg' >
 </a>
 
 

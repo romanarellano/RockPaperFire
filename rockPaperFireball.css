@@ -30,19 +30,37 @@ text-align:center;
 
 }
 
-.images{
+#rockImg{
 position:relative;
 
 padding:15px;
 top:140px;
-left:470px;
+left:580px;
+}
+
+#paperImg{
+position:relative;
+
+padding:15px;
+top:140px;
+left:580px;
+
+}
+
+#fireImg{
+position:relative;
+
+padding:15px;
+top:140px;
+left:580px;
+  
 }
 
 
 
 #Scoreboard{
 position:relative;
-left:500px;
+left:550px;
   color:white;
   width:40%;
   font-size:50px;
