@@ -26,7 +26,7 @@ function rockpaper(){
 
   var You = prompt('Type: \n rock,paper, or fireball');
 
-  console.log('You typed ' + You);
+  var choose=('You typed ' + You);
 
 
   if(elements.indexOf(You)==-1){
@@ -64,13 +64,17 @@ function rockpaper(){
 
     case "fireball": 
 
-    if(Computer === 'fireball')chosen=('Tie game');
+    if(Computer === 'fireball'){
+      chosen=('Tie game');
 
-    else if(Computer === 'rock')chosen=('You lose!' +'\n' +'Computer chose ' + elements[1] );
+    }else if(Computer === 'rock'){
+      chosen=('You lose!' +'\n' +'Computer chose ' + elements[1] );
 
-    else chosen=('You win' + '\n' + 'Computer chose ' +elements[1]);
-
+    }else {
+      chosen=('You win' + '\n' + 'Computer chose ' +elements[1]);
     }
+    }
+    document.getElementById('test').innerHTML=choose;
     document.getElementById('runGame').innerHTML=chosen;
     //return chosen + "\n"+ "Thank you for playing!";
 }
