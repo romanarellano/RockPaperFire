@@ -38,12 +38,13 @@ top:140px;
 left:470px;
 }
 
-#Score{
 
-  color:white;
-}
 
 #Scoreboard{
-
+position:relative;
+left:500px;
   color:white;
+  width:40%;
+  font-size:50px;
+  text-align:center;
 }
